@@ -1,0 +1,62 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+/*mixin*/
+@mixin notice-button{
+ width: 150px;
+ padding: 7px;
+ background: #fff;
+ cursor: pointer;
+ font-size: $notice-btn-fs;
+ transition: all 0.3s;
+ &.complete:hover{
+   background: $complet-btn;
+   color: #fff;
+   border: 3px solid transparent;
+ }
+ &.loading:hover{
+  background: $loading-btn;
+  color: #fff;
+  border: 3px solid transparent;
+ }
+ &.error:hover{
+  background: $error-btn;
+  color: #fff;
+  border: 3px solid transparent;
+ }
+}
+
+$complet-btn: royalblue;
+$loading-btn: green;
+$error-btn: crimson;
+$notice-btn-hover: #000;
+$notice-btn-fs: 18px;
+
+
+
+body{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 100vh;
+ .btns{
+   .complete{
+    @include notice-button;
+    color: $complet-btn;
+    border: 3px solid $complet-btn;
+   }
+   .loading{
+    @include notice-button;
+    color: $complet-btn;
+    border: 3px solid $loading-btn;
+   }
+   .error{
+    @include notice-button;
+    color: $complet-btn;
+    border: 3px solid $error-btn;
+   }
+ }
+}

@@ -1,0 +1,27 @@
+.parent{
+ border: 5px solid #f00;
+ background-color: khaki;
+ width: 500px;
+ height: 300px;
+ display: grid;
+ /* grid-template-columns:  auto auto auto auto auto auto; */
+ /* grid-gap: 10px; */
+ div{
+  border: 1px solid rgb(0, 0, 0);
+  &.item1{
+   background: crimson;
+   grid-area: 1/1 / 2/3;
+   
+  }
+  &.item2{
+   background: rgb(20, 220, 97);
+   grid-area: 1/2 / 3/3;
+   z-index: 1;
+  }
+  &.item3{
+   background: rgb(220, 207, 20);
+   grid-area: 2/2 / 2/4;
+   
+  }
+ }
+}

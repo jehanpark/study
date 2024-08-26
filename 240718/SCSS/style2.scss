@@ -1,0 +1,9 @@
+@import "./font.scss";
+@import "./detile.scss";
+@import "./variables.scss";
+
+body{
+ font-family: "Playwrite HR Lijeva", cursive;
+ background: $body-bg-color;
+}
+

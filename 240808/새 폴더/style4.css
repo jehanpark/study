@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul, li, a {
+  list-style: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+  height: 100vh;
+}
+
+.contents form {
+  width: 400px;
+  height: auto;
+  gap: 30px;
+}
+.contents form h2 {
+  text-align: center;
+  padding: 20px;
+}
+.contents form .txtbar {
+  width: 80%;
+  height: 40px;
+  gap: 20px;
+  margin-top: 10px;
+  border: none;
+  border-bottom: 1px solid #404040;
+}
+.contents form .txtbar:focus {
+  border: none;
+}
+.contents form .btn {
+  width: 100%;
+  height: 50px;
+  padding: 20px 0;
+  margin-top: 30px;
+}
+.contents .output {
+  width: 100%;
+  height: auto;
+  border: 1px solid #454545;
+}
+.contents .output tr th {
+  padding: 20px;
+}
+.contents .output tr th :nth-child(1) {
+  width: 200px;
+}

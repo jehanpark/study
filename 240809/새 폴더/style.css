@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 30px;
+}
+body .container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+body .container .bolck {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+body .buttons {
+  display: flex;
+  gap: 18px;
+}
+body .buttons button {
+  width: 70px;
+  height: 70px;
+  border: none;
+  border-radius: 15px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+body .buttons button.red {
+  background: rgb(251, 70, 70);
+  color: #fff;
+}
+body .buttons button.blue {
+  background: rgb(22, 97, 245);
+  color: #fff;
+}
+body .buttons button.green {
+  background: rgb(23, 201, 109);
+  color: #fff;
+}
+body .result {
+  font-size: 2rem;
+  font-weight: bold;
+}

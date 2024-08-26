@@ -1,0 +1,53 @@
+*{margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+ul,
+li{
+ list-style: none;
+}
+
+$color:(
+ bg-dark-color:#000,
+ item-color: #74b9ff,
+ bg-light-color:#fff,
+ bg-item-border:#817f7f,
+ bg-item-color: #827474,
+);
+
+$item-size:100px;
+
+body{
+ display: flex;
+ justify-content: center;align-items: center;
+ height: 100vh;
+ background: map-get($color ,bg-dark-color);
+ .icon{
+display: flex;
+gap: 20px;
+li{
+ label{
+  input[type="checkbox"]{
+   display: none;
+   &:checked + div {
+    border: none;
+    box-shadow: 0 0 15 rgb(18, 18, 236);
+   }
+
+  }
+  div{
+   color:map-get($color, bg-light-color);
+   width: $item-size;
+   height: $item-size;
+   background: map-get($color,bg-item-color);
+   border-radius: 15px;
+   border: ($item-size / 33) solid map-get($color, bg-item-border);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+ }
+}
+ }
+}

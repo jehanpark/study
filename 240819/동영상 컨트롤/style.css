@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*var*/
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #000;
+  color: #fff;
+}
+body .player {
+  width: 80%;
+  max-width: 550px;
+  position: relative;
+  overflow: hidden;
+}
+body .player video {
+  width: 100%;
+}
+body .player .progress {
+  width: 100%;
+  height: 6px;
+  background: #000;
+  position: absolute;
+  top: 0;
+}
+body .player .progress .bar {
+  height: 8px;
+  background: #f00;
+  position: absolute;
+}
+body .player .progress .bar .circle {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: #f00;
+  top: -130%;
+  left: 0;
+  border-radius: 50%;
+  transition: opacity 0.5s;
+}
+body .player .controls {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  transition: all 0.3s;
+}
+body .player .controls .buttons {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 8px;
+}
+body .player .controls .buttons .menu {
+  display: flex;
+  align-items: center;
+  gap: 10;
+}
+body .player .controls .buttons .menu:nth-child(2) {
+  display: flex;
+}
+body .player .controls .buttons .menu:nth-child(2) input[type=range] {
+  width: 100px;
+  height: 6px;
+  background: #fff;
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+body .player .controls .buttons .menu .time {
+  display: flex;
+  gap: 8px;
+  font-size: 90%;
+}
+body .player .controls .buttons #fullscreenBtn {
+  font-size: 0.8rem;
+  padding-left: 0;
+}
+body .player:hover {
+  transform: translateY(0);
+}
+
+.play-pause {
+  width: 50px;
+  height: 30px;
+  border-radius: 8px;
+  background: crimson;
+}

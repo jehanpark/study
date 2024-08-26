@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+ <script defer src="script1.js"></script>
+ <style>
+  body{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   main{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+   button{
+    width: 150px;
+    padding: 10px 20px;
+    cursor: pointer;
+   }
+   #result{
+    font-size: 1.4rem;
+    font-weight: bold;
+   }
+   }
+  }
+ </style>
+</head>
+<body>
+<main class="cantainer">
+  <h1>3호선</h1>
+  <button>다음 역</button>
+  <span id="result">출발!~</span>
+</main>
+</body>
+</html>

@@ -1,0 +1,29 @@
+body{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 100vh;
+}
+
+.box{
+ padding: 20px;
+ background: #000;
+ border-radius: 24px;
+ width: 200px;
+ height: 200px;
+ &:hover{
+  background: #3a3a3a;
+ }
+ .txt{
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:100%;
+  font-size: 20px;
+  .day{
+   color: #01ff95;
+   font-size: 24px;
+  }
+ }
+}

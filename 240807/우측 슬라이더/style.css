@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+}
+
+.toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px;
+  transition: all 0.3s;
+}
+.toggle.active {
+  transform: translateX(-180px);
+}
+
+.slider {
+  position: fixed;
+  top: 0;
+  right: 0px;
+  width: 200px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: #3b6edd;
+  transition: all 0.4s;
+  transform: translateX(100%);
+}
+.slider span {
+  color: #fff;
+  margin-top: 50px;
+}
+.slider.active {
+  transform: translateX(0);
+}

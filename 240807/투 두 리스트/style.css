@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li,
+a {
+  color: inherit;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 600px;
+  margin: 50px auto;
+  padding: 10px 20px;
+}
+.container .bookinfo {
+  margin-top: 40px;
+}
+.container .bookinfo li {
+  font-size: 1rem;
+  line-height: 3;
+}
+.container .bookinfo li label {
+  display: inline-block;
+  width: 50px;
+}
+.container .bookinfo li input[type=text] {
+  width: 400px;
+}
+.container .btn {
+  width: 150px;
+  margin: 20px 55px;
+  padding: 5px 10px;
+  font-size: 0.9rem;
+}
+
+.bookList {
+  width: 500px;
+}
+.bookList li {
+  font-size: 1rem;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+}
+.bookList li span {
+  display: inline-block;
+  padding: 5px 10px;
+  background: #ddd;
+  color: #fff;
+  border-radius: 8px;
+  position: absolute;
+  right: 10px;
+  top: 0;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.bookList li span:hover {
+  background: rgb(0, 255, 179);
+  color: #000;
+  font-weight: bold;
+}

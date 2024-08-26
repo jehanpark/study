@@ -1,0 +1,16 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+body .buttons .order {
+  background: #0bcf25;
+}
+
+.btn, body .buttons .order {
+  width: 200px;
+  padding: 7px;
+  font-size: 18px;
+  text-transform: uppercase;
+}

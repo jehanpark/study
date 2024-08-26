@@ -1,0 +1,30 @@
+body{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 100vh;
+}
+
+.content{
+ width: auto;
+ background: #3f3f3f;
+ padding: 20px 40px;
+ border-radius: 8px;
+ gap: 10px;
+ .stars{
+  width: 100%;
+  display: flex;
+  i{
+   color: rgb(2, 2, 2);
+   margin-right: 8px;
+   cursor: pointer;
+   transition: all 0.3s;
+   &.active{
+    color: yellow;
+   }
+  }
+ }
+ .comment{
+  color: #fff;
+ }
+}

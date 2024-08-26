@@ -1,0 +1,39 @@
+*{
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+}
+
+body{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 100vh;
+ main{
+  #title{
+   margin-bottom: 10px;
+   text-align: center;
+  }
+  #profile{
+   display: flex;
+   align-items: center;
+   gap: 20px;
+   border-radius: 10px;
+   border: 1px solid #ccc;
+   padding: 20px;
+   .blind{
+    display: none;
+   }
+   #desc{
+    p{
+     margin: 4px 0;
+     font-size: 14px;
+     &.active{
+      color: aqua;
+      background: #000;
+     }
+    }
+   }
+  }
+ }
+}

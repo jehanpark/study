@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*mixin*/
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+body .btns .complete {
+  width: 150px;
+  padding: 7px;
+  background: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  transition: all 0.3s;
+  color: royalblue;
+  border: 3px solid royalblue;
+}
+body .btns .complete.complete:hover {
+  background: royalblue;
+  color: #fff;
+  border: 3px solid transparent;
+}
+body .btns .complete.loading:hover {
+  background: green;
+  color: #fff;
+  border: 3px solid transparent;
+}
+body .btns .complete.error:hover {
+  background: crimson;
+  color: #fff;
+  border: 3px solid transparent;
+}
+body .btns .loading {
+  width: 150px;
+  padding: 7px;
+  background: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  transition: all 0.3s;
+  color: royalblue;
+  border: 3px solid green;
+}
+body .btns .loading.complete:hover {
+  background: royalblue;
+  color: #fff;
+  border: 3px solid transparent;
+}
+body .btns .loading.loading:hover {
+  background: green;
+  color: #fff;
+  border: 3px solid transparent;
+}
+body .btns .loading.error:hover {
+  background: crimson;
+  color: #fff;
+  border: 3px solid transparent;
+}
+body .btns .error {
+  width: 150px;
+  padding: 7px;
+  background: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  transition: all 0.3s;
+  color: royalblue;
+  border: 3px solid crimson;
+}
+body .btns .error.complete:hover {
+  background: royalblue;
+  color: #fff;
+  border: 3px solid transparent;
+}
+body .btns .error.loading:hover {
+  background: green;
+  color: #fff;
+  border: 3px solid transparent;
+}
+body .btns .error.error:hover {
+  background: crimson;
+  color: #fff;
+  border: 3px solid transparent;
+}

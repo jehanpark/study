@@ -1,0 +1,17 @@
+body{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 100vh;
+ p{
+  text-align: center;
+ }
+ .character{
+  width: 100px;
+  height: 100px;
+  background: url(./img/b8f7fae134726933.png)center/contain no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+ }
+}

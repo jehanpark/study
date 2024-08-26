@@ -1,0 +1,29 @@
+.parent{
+ border: 5px solid #f00;
+ background-color: khaki;
+ width: 500px;
+ height: 300px;
+ display: grid;
+ grid-template-columns: repeat(3,auto);
+ grid-gap: 5px;
+ /* grid-template-columns:  auto auto auto auto auto auto; */
+ /* grid-gap: 10px; */
+ div{
+  border: 1px solid rgb(0, 0, 0);
+  &.item1{
+   order: 6;
+  }
+  &.item2{
+   order: 5;
+  }
+  &.item3{
+   order: 6;
+  }
+  &.item4{
+   order: 2;
+  }
+  &.item1{
+   order: 6;
+  }
+ }
+}

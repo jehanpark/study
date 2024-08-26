@@ -1,0 +1,64 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+body{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 100vh;
+ background: #1d9387;
+}
+
+main{
+ background: #fff;
+ width: 640px;
+ height: 400px;
+ padding: 40px;
+ box-shadow: 0 2px 5px 0.5px;
+ form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  h1{
+   text-align: center;
+  }
+  .txtarea{
+   width: 400px;
+   padding: 10px;
+   border: none;
+   border-bottom: 1px solid #626262;
+   &:focus{
+    outline: none;
+   }
+   
+  }
+  #warningMessage{
+   color: #f00;
+   font-weight: bold;
+   font-size: 20px;
+  }
+  .button-warpper{
+   display: flex;
+   justify-content: center;
+   gap: 20px;
+   button{
+    padding: 15px 60px;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: pointer;
+    &.cancel{
+     background: #959595;
+    }
+    &.submit{
+     background: #487;
+    }
+   }
+  }
+ }
+}

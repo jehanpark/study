@@ -1,0 +1,23 @@
+.parent{
+ border: 5px solid #000;
+ display: grid;
+ width: 900px;
+ height: 400px;
+ /* grid-template-columns: 1fr 1fr 1fr;
+ grid-template-rows: 100px 300px; */
+ grid-template-columns:auto auto;
+ justify-items: center;
+ align-items: center;
+ & div {
+  background: yellowgreen;
+  border: 1px solid #fff;
+  width: 100px;
+  height: 100px;
+  &:nth-child(1) {
+   align-self:end;
+  }
+  &:nth-child(2){
+   justify-self: start;
+  }
+ }
+}

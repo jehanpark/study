@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 180px;
+}
+body h1 {
+  text-align: center;
+}
+body form {
+  margin: 20px 0;
+}
+body form input[type=text] {
+  width: 60px;
+  height: 30px;
+  text-align: center;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+body form input[type=submit],
+body form input[type=reset] {
+  width: 100px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+}
+body #result {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  width: 400px;
+}

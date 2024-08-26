@@ -1,0 +1,17 @@
+[
+ {
+ "name":"jehanpark",
+ "major" : "영문학과",
+ "grade" : 3
+},
+{
+ "name":"donghun",
+ "major" : "무용학과",
+ "grade" : 2
+},
+{
+ "name":"jinwoo",
+ "major" : "산업디자인",
+ "grade" : 3
+}
+]
