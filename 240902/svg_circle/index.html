@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curved Text on Circle</title>
+  <link rel="stylesheet" href="style.css"> <!-- 외부 CSS 파일 연결 -->
+</head>
+<body>
+  <!-- SVG 요소 -->
+  <svg class="curved-text" viewBox="0 0 300 300">
+    <!-- 원형 경로 정의 -->
+    <defs>
+      <path id="circlePath" d="M 150, 150 m -100, 0 a 100,100 0 1,1 200,0 a 100,100 0 1,1 -200,0" />
+    </defs>
+    <!-- 경로를 따라 텍스트 추가 -->
+    <text>
+      <textPath href="#circlePath">원형 경로를 따라 휘어진 텍스트원형 경로를 따라 휘어진 텍스트원형 경로를 따라 휘어진 텍스트원형 경로를 따라 휘어진 텍스트원형 경로를 따라 휘어진</textPath>
+    </text>
+  </svg>
+</body>
+</html>
