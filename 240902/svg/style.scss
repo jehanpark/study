@@ -1,0 +1,48 @@
+body{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 100vh;
+ background: linear-gradient(135deg, #000, #1d1d1d,#5e0303);
+}
+section{
+ width: 100vw;
+ height: 100vh;
+}
+svg{
+ fill: none;
+ stroke: #000000;
+ stroke-width: 1px;
+ width: 1200px;
+}
+.circle{
+ position: absolute;
+ top: 535px;
+ left: calc(50% - 265px);
+ width: 10px;
+ height: 10px;
+ background: #ffc800;
+ border-radius: 50%;
+}
+
+.eye{
+ position: absolute;
+ left: 250px;
+ top: 600px;
+ width: 40px;
+ height: 40px;
+ background: #000000;
+ border-radius: 50%;
+ animation: eye  0.5s infinite alternate;
+}
+
+@keyframes eye {
+0%{
+transform: skew(0deg);
+color: #000;
+}
+100%{
+ color: #f00;
+ transform: skew(20deg);
+}
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+ <style>
+  .boxContainer{
+   width: 200px;
+   height: 200px;
+   background: #696969;
+   perspective: 600px;
+   .box{
+    width: 100%;
+    height: 100%;
+    background: royalblue;
+    opacity: 0.4;
+    transform: translate3d(0,0,0);
+    animation: ani 3s linear infinite;
+   }
+  }
+
+  @keyframes ani {
+   0%{
+    transform: translate3d(0,0,0) rotateX(0deg);
+   }
+   100%{
+    transform: translate3d(0,0,0) rotateX(360deg);
+   }
+  }
+ </style>
+</head>
+<body>
+ <div class="boxContainer">
+  <div class="box"></div>
+ </div>
+</body>
+</html>

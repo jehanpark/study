@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  background: linear-gradient(to bottom, #4b0220, #9a2617);
+}
+
+main section {
+  position: relative;
+  width: 100%;
+}
+main section.mainPage {
+  position: fixed;
+  top: 0;
+}
+main section.mainPage .imgWrap {
+  height: 100vh;
+  perspective: 400px;
+}
+main section.mainPage .imgWrap .parallax {
+  position: fixed;
+  width: 100%;
+  height: inherit;
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+main section.mainPage .imgWrap .parallax:nth-child(1) {
+  background-image: url(./img/main_0.png);
+}
+main section.mainPage .imgWrap .parallax:nth-child(2) {
+  background-image: url(./img/main_1.png);
+}
+main section.mainPage .imgWrap .parallax:nth-child(3) {
+  background-image: url(./img/main_2.png);
+}
+main section.mainPage .imgWrap .parallax:nth-child(4) {
+  background-image: url(./img/main_3.png);
+}
+main section.mainPage .imgWrap .parallax:nth-child(5) {
+  background-image: url(./img/main_4.png);
+}
+main section.mainPage .imgWrap .parallax:nth-child(6) {
+  background-image: url(./img/main_5.png);
+}
+main section.mainPage .imgWrap .parallax:nth-child(7) {
+  background-image: url(./img/main_6.png);
+}
+main section.subPage {
+  padding-top: 100vh;
+  height: 60vh;
+}
+main section.subPage .innerWrap {
+  position: relative;
+}
+main section.subPage .innerWrap .contWrap {
+  width: 700px;
+  margin: 0 auto;
+  padding: 20px 40px;
+  background: rgba(0, 0, 0, 0.6);
+}
+main section.subPage .innerWrap .contWrap p {
+  color: #eaeaea;
+  font-size: 20px;
+  line-height: 36px;
+}
