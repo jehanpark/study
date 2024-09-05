@@ -1,0 +1,18 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 100vh;
+  margin: 0 auto;
+  & > section {
+    width: 100%;
+    background: rgb(138, 150, 140);
+    padding: 20px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(16, 16, 16);
+    border-radius: 5px;
+  }
+}
