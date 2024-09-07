@@ -1,0 +1,26 @@
+.contentsAll{
+ display: flex;
+ justify-content: center;
+}
+.gnb{
+ display: flex;
+ justify-content: space-evenly;
+ align-items: center;
+ margin-top: 10px;
+ width: 90%;
+ height: 60px;
+ background: #000;
+ border-radius: 30px;
+
+ .logo{
+  color: #fff;
+ }
+ .lnbAll{
+  display: flex;
+  gap: 20px;
+  .lnb{
+   color: aquamarine;
+   gap: 10px;
+  }
+ }
+}
