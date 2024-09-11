@@ -1,8 +1,12 @@
-import React from "react";
+import { useContext } from "react";
+import React, {useContext}from "react";
 import "./TodoItem.css";
+import{TodoContext} from "../App";
+
+
 
 const TodoItem = ({ id, isDone, content, createdDate, onUpdate, onDelete }) => {
-  console.log( `${id} TodoItem업데이트` )
+  const {onUpdate, onDelete}= useContext(TodoContext)
   const onchangeCheckbox = ()=>{
     onUpdate(id)
   }

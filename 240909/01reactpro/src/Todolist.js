@@ -1,8 +1,9 @@
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo, useContext } from "react";
 import "./TodoList.css";
 import TodoItem from "./TodoItem";
 
-const TodoList = ({ todo, onUpdate }) => {
+const TodoList = () => {
+  const {todo = []} = useContext(Todocontext)
   const [search, setSearch] = useState("");
   const onChangeSearch = (e) => {
     setSearch(e.target.value);
@@ -31,7 +32,7 @@ const analyzeTodo = useMemo(
 )
 
 const {totalCount,doneCount,notDoneCount} = analyzeTodo
-
+const onDelet =()=>{}
 
   return (
     <div className="TodoList">
@@ -49,7 +50,7 @@ const {totalCount,doneCount,notDoneCount} = analyzeTodo
       />
       <div className="list_wrapper">
         {getSearchResult().map((it) => (
-          <TodoItem key={it.id} {...it} onUpdate={onUpdate} onDelet={onDelet}/>
+          <TodoItem key={it.id} {...it} onUpdate={onUpdate} onDelet={onDelete}/>
         ))}
       </div>
     </div>

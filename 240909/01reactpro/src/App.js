@@ -1,10 +1,16 @@
-import { useRef, useReducer, useCallback } from "react";
+import React, { useRef, useReducer, useCallback } from "react";
 import "./App.css";
 import Header from "./Header";
 import TodoEditor from "./TodoEditor";
 import TodoItem from "./TodoItem";
 import TodoList from "./Todolist";
 import TestCopm from "./TestCopm";
+
+const mockTodo =()=>{}
+const TestComp =()=>{}
+
+  const TodoContext = React.createContext()
+  console.log(TodoContext)
 
   const reducer =(state, action)=>{
     switch(action.type){
@@ -66,11 +72,17 @@ function App() {
     <div className="App">
       <TestComp />
       <Header />
-      <TodoList todo={todo} onUpdate={onUpdate} onDelet={onDelete}/>
-      <TodoEditor />
-      <TodoItem />
+      <TodoContext.Provider value={{ todo, onCreate, onUpdate, onDelete }}>
+        <TodoEditor onCreate={onCreate} />
+        <TodoList todo={todo} onUpdate={onUpdate} onDelete={onDelete} />
+      </TodoContext.Provider>
     </div>
   );
+
 }
+
+// TodoList.defaultPorps = {
+//   todo [],
+// }
 
 export default App;
