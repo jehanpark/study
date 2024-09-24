@@ -278,6 +278,7 @@ nav ul li a {
   height: 5%;
 }
 .section .inner {
+  position: relative;
   width: 1200px;
   height: 100%;
   margin: auto;

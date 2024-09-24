@@ -49,7 +49,7 @@ const sec2 = () => {
     targets:".slider"
   })
 };
-const sec3 = () =>{
+const sec3 = () => {
   const d0 =
     "M453 100C283.5 11.5 184 0.499989 0.5 0.5V772H1921V63C1753.5 144 1381.5 288 1146 288C825 288 726.67 242.89 453 100Z";
   const d1 =
@@ -79,6 +79,102 @@ const sec3 = () =>{
     easing:"easeOutSine"
   })
 }
+const staggerWrap = document.querySelector("#sec4 .img_Wrap")
+const grid = [20,20];
+const col = grid[0];
+const row = grid[1];
+
+const allElem = col * row;
+for(i = 0; i < allElem; i ++){
+  const div = document.createElement("div");
+  div.className = "tail"
+  staggerWrap.appendChild(div)
+}
+const sec4 = () => {
+  const stageAni = anime.timeline({
+    targets:"tail",
+    easing:"easeInback",
+    duration:2000,
+    delay: anime.stagger(10, {from: "last"}),
+    endDelay: 1000,
+    loop: false,
+    autoplay: false,
+  })
+
+  stageAni.add({
+    targets: "#sec4 h1 img",
+    opacity:0,
+    duration: 500,
+  }).add({
+    translateX:()=>{return anime.random(-500, 500)},
+    translateY:()=> {return anime.random(-500,-500)},
+    delay: anime.stagger(200,{grid: grid, from: "last"}),
+    background:"#fff",
+    borderRadius: "50%",
+    scale: 0.2,
+  })
+  .add({
+    targets:".img_wrap",
+    rotate: 360,
+    easing: "linear",
+    duration: 4000,
+    scale: 0.5,
+  })
+  .add({
+    targets:"img_wrap",
+    duretion: 1000,
+    scale:1,
+  })
+  .add({
+    translateX:0,
+    translateY:0,
+    duration: 3000,
+    scale: 0.8,
+    background: "#2af598"
+  })
+  .add({
+    scale:0.5,
+    rotate: 60,
+    duration: 500,
+    borderRadius:"0%",
+    delay: anime.stagger(100,{grid: grid, from:"center"})
+  })
+  .add({
+    scale: 0.8,
+    rotate: -60,
+    duration: 500,
+    background: "#fff",
+    delay: ainme.stagger(100,{grid: grid, from:"center"})
+  }).add({
+    borderRadius:"0%",
+    scaleX:0.1,
+    scale:1,
+    ratate: 120,
+    duration: 500,
+    background:"2af598",
+    delay: anime. stagger(100,{grid: grid,from: "center"})
+  })
+  .add({
+    scale:1,
+    duration:500,
+    delay: anime. stagger(100,{grid: grid,from: "center"})
+  })
+  .add({
+    background:"#009efd",
+    duration:800,
+    delay: anime. stagger(100,{grid: grid,from: "center"})
+  })
+  .add({
+    targets: "sec4 h1 img",
+    opacity:1,
+    duration: 500,
+  })
+
+  staggerWrap.addEventListener("click",()=>{
+    stageAni.play()
+  })
+}
+
 //fullPage.js
 new fullpage("#fullpage", {
   autoScrolling: true,
