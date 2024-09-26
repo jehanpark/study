@@ -1,0 +1,42 @@
+import { ThemeProvider, styled, createGlobalStyle } from "styled-components";
+import { darkTheme, lightTheme } from "./theme";
+import Home from "./Home";
+import { useState } from "react";
+
+const GlobalStyle = createGlobalStyle`
+  *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+`;
+const Button = styled.button`
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+`;
+
+function App() {
+  const [isdark, setisdark] = useState(false);
+
+  const toggleDark = () => {
+    setisdark((current)=>!current);
+  };
+
+  return (
+    <>
+      <ThemeProvider theme={isdark ? lightTheme : darkTheme}>
+        <GlobalStyle />
+        <Button onClick={toggleDark}>
+          {isdark ? "라이트모드" : "다크모드"}
+        </Button>
+        <Home />
+      </ThemeProvider>
+    </>
+  );
+}
+
+export default App;

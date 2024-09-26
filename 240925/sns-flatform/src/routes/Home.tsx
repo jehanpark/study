@@ -1,18 +1,14 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
-import { auth } from "../firebase";
+
+import styled from "styled-components";
+import PostForm from "../compornents/PostForm";
+
+const Wrapper = styled.div``
 
 const Home = () => {
-  const navigate = useNavigate();
-  const logout =()=>{
-    auth.signOut();
-    navigate("/login")
-  }
-
   return ( 
-     <h1>
-    <button onClick={logout}>logout</button>
-    </h1>
+    <Wrapper>
+      <PostForm />
+    </Wrapper>
     )
 };
 
